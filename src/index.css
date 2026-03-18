@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-bg: #020617;
+  --color-accent-blue: #003e78;
+  --color-accent-cyan: #0ea5e9;
+
+  --color-light-bg: #f8fafc;
+  --color-light-surface: #ffffff;
+  --color-light-text: #0f172a;
+
+  --font-geist-sans: "Geist Sans", sans-serif;
+  --font-geist-mono: "Geist Mono", monospace;
+}
+
+:root {
+  font-family: var(--font-geist-sans);
+  font-size: 16px;
+  background-color: var(--color-light-bg);
+  color: var(--color-light-text);
+}
+
+.dark {
+  background-color: var(--color-primary-bg);
+  color: white;
+}
+
+@layer base {
+  button {
+    @apply cursor-pointer;
+  }
+}
